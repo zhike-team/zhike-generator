@@ -1,0 +1,27 @@
+{
+  "name": "zhike-generator",
+  "version": "1.0.0",
+  "description": "awesome generator for zhike backend project",
+  "keywords": ["scaffold", "generator"],
+  "main": "bin/generator.js",
+  "bin": {
+    "zhike-generator": "./bin/generator.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zhike <https://github.com/zhike-team>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhike-team/zhike-generator.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhike-team/zhike-generator/issues"
+  },
+  "dependencies": {
+    "cli-color": "^1.1.0",
+    "commander": "^2.9.0",
+    "fs-extra": "^0.28.0"
+  }
+}

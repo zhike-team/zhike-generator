@@ -1,0 +1,8 @@
+node_modules
+.DS_Store
+*.log
+*.todo
+*.psd
+.idea
+src/common/config.db.js
+src/common/config.js

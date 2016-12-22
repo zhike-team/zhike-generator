@@ -1,0 +1,37 @@
+{
+  "name": "awesome",
+  "version": "1.0.0",
+  "description": "awesome",
+  "scripts": {
+    "start": "node index",
+    "test": "mocha --require intelli-espower-loader",
+    "sync": "node bin/sync",
+    "init:db": "node bin/init_db",
+    "init:config": "node bin/init_config",
+    "migrate": "sequelize db:migrate --migrations-path src/models/migrations --config ./config.db.js",
+    "migrate:undo": "sequelize db:migrate:undo --migrations-path src/models/migrations --config ./config.db.js",
+    "migration:create": "sequelize migration:create --migrations-path src/models/migrations --config ./config.db.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "co": "^4.6.0",
+    "compression": "^1.6.0",
+    "connect-timeout": "^1.7.0",
+    "cookie-parser": "^1.4.0",
+    "express": "^4.13.3",
+    "format-json-pretty": "^1.0.1",
+    "fs-extra": "^0.26.5",
+    "lodash": "^3.10.1",
+    "pg": "^4.4.3",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "3.5.1",
+    "thunkify-wrap": "^1.0.4",
+    "util": "^0.10.3",
+    "zhike-consul": "^1.0.5"
+  },
+  "devDependencies": {
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^2.3.4",
+    "power-assert": "^1.4.2"
+  }
+}

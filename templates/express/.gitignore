@@ -4,5 +4,6 @@ node_modules
 *.todo
 *.psd
 .idea
-src/common/config.db.js
-src/common/config.js
+src/models/schemas/*
+config.db.js
+config.local.js

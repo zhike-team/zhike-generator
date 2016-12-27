@@ -43,7 +43,7 @@ exports.toCamel = function(name) {
       newName += underline ? name[i].toUpperCase() : name[i];
       underline = false;
     }
-  };
+  }
   return newName;
 };
 

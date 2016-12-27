@@ -6,14 +6,13 @@
     "start": "node index",
     "test": "mocha --require intelli-espower-loader",
     "sync": "node bin/sync",
-    "init:db": "node bin/init_db",
-    "init:config": "node bin/init_config",
-    "migrate": "sequelize db:migrate --migrations-path src/models/migrations --config ./config.db.js",
-    "migrate:undo": "sequelize db:migrate:undo --migrations-path src/models/migrations --config ./config.db.js",
-    "migration:create": "sequelize migration:create --migrations-path src/models/migrations --config ./config.db.js"
+    "migrate": "node bin/migrate",
+    "eslint": "eslint --ext .js `git diff --cached --name-only | grep -e '.js$'`"
   },
+  "pre-commit": ["eslint"],
   "dependencies": {
     "body-parser": "^1.14.1",
+    "child_process": "^1.0.2",
     "co": "^4.6.0",
     "compression": "^1.6.0",
     "connect-timeout": "^1.7.0",
@@ -31,8 +30,10 @@
     "zhike-consul": "^1.0.5"
   },
   "devDependencies": {
+    "eslint": "^3.11.1",
     "intelli-espower-loader": "^1.0.1",
     "mocha": "^2.3.4",
-    "power-assert": "^1.4.2"
+    "power-assert": "^1.4.2",
+    "pre-commit": "^1.2.2"
   }
 }

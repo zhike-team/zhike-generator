@@ -16,18 +16,18 @@ module.exports = function*() {
     global.config = require('./config.local');
     return config;
   case 'development':
-    consulConfig.host = '172.16.3.2';
+    consulConfig.host = 'dev.smartstudy.com';
     consulConfig.port = 8500;
     consulConfig.env = 'development';
     break;
   case 'test':
-    consulConfig.host = '127.0.0.1';
+    consulConfig.host = 'confsrv.smartstudy.com';
     consulConfig.port = 8500;
     consulConfig.env = 'test';
     break;
   case 'production':
   default:
-    consulConfig.host = '127.0.0.1';
+    consulConfig.host = 'confsrv.smartstudy.com';
     consulConfig.port = 8500;
     consulConfig.env = 'production';
   }

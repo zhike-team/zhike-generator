@@ -1,0 +1,9 @@
+node_modules
+.DS_Store
+*.log
+*.todo
+*.psd
+.idea
+src/models/schemas/*
+config.db.js
+config.local.js

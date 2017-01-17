@@ -36,9 +36,8 @@ let template = program.template || 'express';
 let templates = loadTemplates(path.join(__dirname, '../templates'));
 
 if (program.list) {
-  console.log('Available ' + color.cyan('templates:'));
+  console.log('\nAvailable templates:\n');
   Object.keys(templates).forEach(function(temp) {
-    console.log();
     console.log(color.cyan('- ' + temp));
   });
   console.log();

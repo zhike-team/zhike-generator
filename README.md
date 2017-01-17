@@ -18,7 +18,10 @@ or
 
 ## Template
 
-Avaliable template now is only `express`.       
++ express
++ koa
++ restify
+
 Welcome to add your favourite to the directory of `templates`.
 
 ## ChangeLog
@@ -28,3 +31,7 @@ Welcome to add your favourite to the directory of `templates`.
 1. express模板删除掉bin目录下的init_db和init_config文件
 2. bin目录下添加数据库修改的migrate文件，执行数据库修改只需执行npm run migrate即可
 2. 添加.eslintrc.js, git commit之前会对代码格式进行相应的检查
+
+2017.01.17:
+
+1. 添加koa和restify模板

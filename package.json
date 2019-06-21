@@ -1,8 +1,11 @@
 {
   "name": "zhike-generator",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "awesome generator for zhike backend project",
-  "keywords": ["scaffold", "generator"],
+  "keywords": [
+    "scaffold",
+    "generator"
+  ],
   "main": "bin/generator.js",
   "bin": {
     "zhike-generator": "./bin/generator.js"

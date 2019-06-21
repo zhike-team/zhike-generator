@@ -20,11 +20,11 @@
     "express": "^4.13.3",
     "format-json-pretty": "^1.0.1",
     "fs-extra": "^0.26.5",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.11",
     "mysql": "^2.12.0",
     "pg": "^4.4.3",
     "pg-hstore": "^2.3.2",
-    "sequelize": "3.5.1",
+    "sequelize": "^5.8.10",
     "thunkify-wrap": "^1.0.4",
     "util": "^0.10.3",
     "zhike-consul": "^1.0.5"

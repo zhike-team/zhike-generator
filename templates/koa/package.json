@@ -31,7 +31,7 @@
     "zhike-consul": "^1.0.5"
   },
   "devDependencies": {
-    "eslint": "^3.11.1",
+    "eslint": "^5.16.0",
     "intelli-espower-loader": "^1.0.1",
     "mocha": "^2.3.4",
     "power-assert": "^1.4.2",

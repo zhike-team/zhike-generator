@@ -23,8 +23,8 @@
     "url": "https://github.com/zhike-team/zhike-generator/issues"
   },
   "dependencies": {
-    "cli-color": "^1.1.0",
-    "commander": "^2.9.0",
-    "fs-extra": "^0.28.0"
+    "cli-color": "^2.0.0",
+    "commander": "^3.0.2",
+    "fs-extra": "^8.1.0"
   }
 }
